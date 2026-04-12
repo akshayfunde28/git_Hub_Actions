@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OperationController {
 
-    @Autowired
-    private OperationService operationService;
 
     @PostMapping("/operate")
     public ResponseEntity<Operations> operate(@RequestBody Operations operation) {
