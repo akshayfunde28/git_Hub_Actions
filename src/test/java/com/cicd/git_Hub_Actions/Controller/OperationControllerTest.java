@@ -20,7 +20,6 @@ public class OperationControllerTest {
     @MockitoBean
     private OperationService operationService;
 
-    // ✅ ADD TEST
     @Test
     public void testAddOperation() throws Exception {
 
@@ -33,7 +32,6 @@ public class OperationControllerTest {
                 .andExpect(jsonPath("$.opResult").value(15));
     }
 
-    // ✅ SUB TEST
     @Test
     public void testSubOperation() throws Exception {
 
