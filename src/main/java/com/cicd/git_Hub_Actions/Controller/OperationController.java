@@ -30,6 +30,9 @@ public class OperationController {
         }
         else {
             return ResponseEntity.badRequest().body(null);
+        }  
+        else if (oper.equals("div")) {
+            operation.setOpResult(first / second);
         }
         return ResponseEntity.ok(operation);
     }
